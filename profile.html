@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <nav class="header">
+            <ul class="navMenu">
+                <li><a href="#">home</a></li>
+                <li><a href="#games">mini games</a></li>
+                <li><a href="#activities">fun activities</a></li>
+                <li><a href="#leaderboard">leaderboard</a></li>
+                <li><a href="#contact">contact details</a></li>
+                <li><a href="../FunHub/profile.html">my profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="playerInfo">
+            <h2>player information</h2>
+            <p><strong>name:</strong> <span id="profileName"></span></p>
+            <p><strong>roll no.:</strong> <span id="profileRoll"></span></p>
+            <p><strong>age:</strong> <span id="profileAge"></span></p>
+        </section>
+
+        <section id="gameHistory">
+            <h2>games played</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>game</th>
+                        <th>date</th>
+                        <th>score</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable">
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="overallStats">
+            <h2>overall stats</h2>
+            <p>total games played: <span id="totalGames"></span></p>
+            <p>best score: <span id="bestScore"></span></p>
+        </section>
+
+    </main>
+</body>
+
+</html>
