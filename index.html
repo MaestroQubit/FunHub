@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunHub - Main Page</title>
+    <script src="../FunHub/indexScript.js"></script>
     <link rel="stylesheet" href="indexStyling.css">
 </head>
 
@@ -30,9 +31,15 @@
         <section id="playerInfoForm">
             <h3>Player Details</h3>
             <form>
-                <label>name: </label><input type="text" placeholder="Player's name"><br>
-                <label>roll no.: </label><input type="number" placeholder="Player's Roll No."><br>
-                <label>age: </label><input type="number" placeholder="Player's Age"><br>
+                <label>name: </label>
+                <input id="playerName" type="text" placeholder="Player's name"><br>
+
+                <label>roll no.: </label>
+                <input id="playerRollNo" type="number" placeholder="Player's Roll No."><br>
+
+                <label>age: </label>
+                <input id="playerAge" type="number" placeholder="Player's Age"><br>
+
                 <input type="submit" value="submit"><br>
             </form>
         </section>
