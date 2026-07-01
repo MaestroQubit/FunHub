@@ -1,7 +1,7 @@
 function saveGameResult(gameName, score) {
   const newRecord = {
     game: gameName,
-    date: new Date().toLocaleDateString(),
+    date: new Date().toLocaleString(),
     score: score
   };
 
