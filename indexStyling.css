@@ -1,7 +1,78 @@
-body{
+body {
+    background-color: #FFBF00;
+    color: #467235;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 10px;
     text-transform: capitalize;
 }
 
-header{
+h1 {
+    font-size: clamp(2rem, 10vw, 5rem);
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff0000, #11ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight:600;
+    background: linear-gradient(90deg, #960ab3, #00c3ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+header {
+    margin: 35px 35px 70px;
+    position: sticky;
+    top: 0;
+    background-color: #FFF78D;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow:
+        0 8px 20px rgb(206, 26, 26),
+        -1em 0 3em rgb(2, 128, 0);
     text-align: center;
 }
+
+.navMenu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navMenu li {
+    margin: 10px;
+}
+
+.navMenu li a {
+    display: block;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 10px 20px;
+    color: #D90000;
+    text-align: center;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.navMenu li a:hover {
+    background-color: #0B1849;
+    color: cyan;
+    transition: 0.5s ease;
+}
+
+#playerInfoForm {}
