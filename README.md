@@ -19,3 +19,5 @@ This project includes:
 4. Dancing Text Page
 5. Fortune Teller Page
 6. Emoji Rain Page
+
+To visit the website follow this link:- https://funhub-six.vercel.app/
