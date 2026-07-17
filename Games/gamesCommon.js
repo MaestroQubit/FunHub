@@ -9,3 +9,4 @@ function saveGameResult(gameName, score) {
   history.push(newRecord);
   localStorage.setItem("gameHistory", JSON.stringify(history));
 }
+  

@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`Correct! You guessed in ${attempts} attempts.`);
       saveGameResult("Guess the Number", attempts);
     } else if (guess < target) {
-      alert("Too low!");
+      alert("Guess a higher number!");
     } else {
-      alert("Too high!");
+      alert("Guess a lower number!");
     }
   });
 });
