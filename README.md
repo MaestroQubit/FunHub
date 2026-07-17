@@ -11,7 +11,7 @@ This project includes:
 4. Memory Card Flip
 5. Typing Speed Test
 
-6 Fun Activities
+6 Fun Websites
 
 1. Proposal Page
 2. Mood Changer Page
