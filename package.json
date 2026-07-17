@@ -1,0 +1,23 @@
+{
+  "name": "funhub",
+  "version": "1.0.0",
+  "description": "Interactive Mini Games and Fun Activities",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaestroQubit/FunHub"
+  },
+  "keywords": [
+    "games",
+    "fun",
+    "interactive"
+  ],
+  "author": "Team FunHub",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
