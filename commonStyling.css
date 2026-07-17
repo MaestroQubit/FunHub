@@ -1,0 +1,72 @@
+body {
+    background-color: #121111;
+    color: #467235;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 10vw, 5rem);
+    background: linear-gradient(90deg, #03762b, #3eb6f3);
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    background: linear-gradient(90deg, #03762b, #3eb6f3);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+header {
+    margin: 20px 20px 10px;
+    position: sticky;
+    top: 0;
+    background-color: #1A0B2E;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 10px 15px rgba(0, 195, 255, 0.6);
+    text-align: center;
+}
+
+.navMenu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navMenu li {
+    margin: 10px;
+}
+
+.navMenu li a {
+    display: block;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 10px 20px;
+    color: #D90000;
+    text-align: center;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
+}
+
+.navMenu li a:hover {
+    background: #00C3FF;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.8);
+    background-color: #0B1849;
+    color: cyan;
+    transition: 0.5s ease;
+}
