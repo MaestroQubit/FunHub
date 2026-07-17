@@ -10,7 +10,6 @@ function playRPS(playerChoice) {
 
     if (playerChoice === computerChoice) {
         result = `It's a tie! You both chose ${playerChoice}.`;
-        round++;
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
