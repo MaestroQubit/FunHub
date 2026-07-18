@@ -1,6 +1,6 @@
 body {
-    background-color: #121111;
-    color: #467235;
+    background: radial-gradient(circle at top, #132238 0%, #0B1120 45%, #070C15 100%);
+    color: #243127;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 10px;
@@ -10,7 +10,7 @@ body {
 h1 {
     text-align: center;
     font-size: clamp(2rem, 10vw, 5rem);
-    background: linear-gradient(90deg, #03762b, #3eb6f3);
+    background: linear-gradient(90deg, #38BDF8, #60A5FA);
     background-clip: text;
     color: transparent;
     transition: all 0.5s ease;
@@ -19,9 +19,8 @@ h1 {
 h2 {
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2rem);
-    background: linear-gradient(90deg, #03762b, #3eb6f3);
     background-clip: text;
-    color: transparent;
+    color: #94A3B8;
     text-align: center;
     transition: all 0.5s ease;
 }
@@ -30,10 +29,11 @@ header {
     margin: 20px 20px 10px;
     position: sticky;
     top: 0;
-    background-color: #1A0B2E;
+    background-color: #111827;
+    border: 1px solid #1E293B;
     border-radius: 15px;
     z-index: 1000;
-    box-shadow: 0 10px 15px rgba(0, 195, 255, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
     text-align: center;
 }
 
@@ -55,18 +55,19 @@ header {
     font-weight: bolder;
     font-size: x-large;
     padding: 10px 20px;
-    color: #D90000;
+    color: #E0F2FE;
+    background-color: #1D4ED8;
     text-align: center;
     text-decoration: none;
-    border: solid black;
+    border: 1px solid #60A5FA;
     border-radius: 10px;
-    box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
+    box-shadow: 0 0 12px rgba(56,189,248,.25)
 }
 
 .navMenu li a:hover {
-    background: #00C3FF;
-    box-shadow: 0 0 15px rgba(0, 195, 255, 0.8);
-    background-color: #0B1849;
-    color: cyan;
+    background: #2563EB;
+    box-shadow: 0 0 18px rgba(56, 189, 248, .35);
+    background-color: #301952;
+    color: #E2E8F0;
     transition: 0.5s ease;
 }
