@@ -1,5 +1,14 @@
 main {
     padding: 10px 20px 40px 20px;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #38BDF8, #60A5FA);
+    background-clip: text;
+    color: transparent;
 }
 
 #playerInfoForm {
@@ -12,18 +21,12 @@ main {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 1);
 }
 
-#playerInfoForm:hover {
+#playerInfoForm:hover,
+#games:hover,
+#websites:hover {
     border-color: #38BDF8;
     box-shadow: 0 0 20px rgba(56, 189, 248, .2);
     transform: all 0.5s ease;
-}
-
-#playerInfoForm h3 {
-    font-size: 2.5rem;
-    text-align: center;
-    background: linear-gradient(90deg, #38BDF8, #60A5FA);
-    background-clip: text;
-    color: transparent;
 }
 
 #playerInfoForm label {
@@ -70,4 +73,64 @@ main {
 #playerInfoForm input[type="submit"]:hover {
     background: #7C3AED;
     box-shadow: 0 0 18px rgba(56, 189, 248, 0.6);
+}
+
+#games {
+    margin: auto;
+    max-width: max-content;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 1);
+}
+
+#gamesList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#gamesList li {
+    flex: 1;
+    list-style-type: none;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameImg {
+    height: 150px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.gameImg:hover,
+.websitesImg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+#websites {
+    max-width: max-content;
+    margin: auto;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 1);
+}
+
+#websitesList {
+    display: flex;
+}
+
+#websitesList li {
+    flex: 1;
+    list-style-type: none;
+}
+
+.websiteImg {
+    height: 100px;
+    width: 150px;
+    border-radius: 50px;
 }
