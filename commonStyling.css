@@ -27,7 +27,7 @@ h2 {
 
 header {
     margin: 20px 20px 10px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background-color: #111827;
     border: 1px solid #1E293B;

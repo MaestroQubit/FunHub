@@ -21,9 +21,7 @@ h3 {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 1);
 }
 
-#playerInfoForm:hover,
-#games:hover,
-#websites:hover {
+#playerInfoForm:hover {
     border-color: #38BDF8;
     box-shadow: 0 0 20px rgba(56, 189, 248, .2);
     transform: all 0.5s ease;
@@ -106,7 +104,7 @@ h3 {
 }
 
 .gameImg:hover,
-.websitesImg:hover {
+.websiteImg:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -123,15 +121,21 @@ h3 {
 
 #websitesList {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 #websitesList li {
     flex: 1;
     list-style-type: none;
+    margin: 4.75px;
+    justify-content: center;
+    align-items: center;
 }
 
 .websiteImg {
-    height: 100px;
-    width: 150px;
+    height: 150px;
+    width: 175px;
     border-radius: 50px;
 }
