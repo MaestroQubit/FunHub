@@ -101,6 +101,7 @@ h3 {
     height: 150px;
     width: 200px;
     border-radius: 50px;
+    border: solid 2px rgb(7, 126, 190);
 }
 
 .gameImg:hover,
@@ -138,4 +139,35 @@ h3 {
     height: 150px;
     width: 175px;
     border-radius: 50px;
+    border: solid 1.5px rgb(7, 126, 190);
+}
+
+#leaderboard {
+    margin: auto;
+    max-width: 100%;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 1);
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+#leaderboard table {
+    color: #057091;
+    padding: 0 50px 0 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#leaderboard th {
+  border: 1px solid #334155;
+  padding: 10px;
+  text-align: center;
+  background-color: #1f2937;
+  color: #38bdf8;
+}
+
+#leaderboard tr{
+  background-color: #1e293b;
 }

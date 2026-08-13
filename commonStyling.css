@@ -3,7 +3,6 @@ body {
     color: #243127;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 10px;
     text-transform: capitalize;
 }
 
@@ -27,7 +26,6 @@ h2 {
 
 header {
     margin: 20px 20px 10px;
-    /* position: sticky; */
     top: 0;
     background-color: #111827;
     border: 1px solid #1E293B;
