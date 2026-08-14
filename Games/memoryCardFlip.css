@@ -1,3 +1,41 @@
-body{
-    text-transform: capitalize;
+#memoryBoard {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(65px, 1fr));
+    gap: 12px;
+    width: min(520px, 100%);
+    margin: 8px auto;
+}
+
+.memory-card {
+    min-height: 72px;
+    border-radius: 22px;
+    border: 1px solid rgba(220, 236, 255, 0.34);
+    background: linear-gradient(160deg, rgba(155, 201, 255, 0.4), rgba(118, 160, 211, 0.35));
+    color: #10213b;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.memory-card.revealed,
+.memory-card.matched {
+    background: linear-gradient(160deg, rgba(208, 230, 255, 0.82), rgba(162, 193, 235, 0.72));
+}
+
+#memoryStatus,
+#memoryMoves {
+    text-align: center;
+    font-weight: 600;
+    color: #d9ecff;
+}
+
+#resetMemoryGame {
+    width: min(260px, 100%);
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    #memoryBoard {
+        grid-template-columns: repeat(3, minmax(65px, 1fr));
+    }
 }

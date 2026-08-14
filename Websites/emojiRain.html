@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
+    <script src="emojiRain.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji Rain</title>
@@ -17,12 +18,20 @@
                 <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Emoji Rain</h1>
+
+    <main>
+        <h2>Create your emoji shower.</h2>
+        <input id="emojiInput" type="text" placeholder="Enter an emoji (e.g. 😀)">
+        <button type="button" id="startEmojiRain">Start Rain</button>
+        <button type="button" id="stopEmojiRain">Stop Rain</button>
+        <div id="emojiRainContainer"></div>
+    </main>
 
     <footer id="contact">
             email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

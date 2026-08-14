@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
+    <script src="complimentGenerator.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compliment Generator</title>
@@ -16,15 +17,20 @@
             <ul class="navMenu">
                 <li><a href="../index.html">home</a></li>
                 <li><a href="../index.html#games">mini games</a></li>
-                <li><a href="../index.html#websites">fun activities</a></li>
+                <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Compliment Generator</h1>
+
+    <main>
+        <h2 id="complimentText">Click below for a compliment.</h2>
+        <button type="button" id="generateCompliment">Generate Compliment</button>
+    </main>
 
     <footer id="contact">
         email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

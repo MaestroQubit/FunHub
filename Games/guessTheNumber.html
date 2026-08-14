@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
-    <script src="gamesCommon.js"></script>
-    <script src="guessTheNumber.js"></script>
+    <script src="gamesCommon.js" defer></script>
+    <script src="guessTheNumber.js" defer></script>
     <link rel="stylesheet" href="../commonStyling.css">
     <link rel="stylesheet" href="guessTheNumber.css">
 </head>
@@ -30,8 +30,11 @@
 
     <main>
         <h2>Enter a number between 1 and 100:</h2>
-        <input id="guessInput" type="number" placeholder="Your Guess Goes Here"><br>
-        <button type="submit" id="submitGuess">Submit Guess</button>
+        <input id="guessInput" type="number" min="1" max="100" placeholder="Your guess goes here"><br>
+        <button type="button" id="submitGuess">Submit Guess</button>
+        <button type="button" id="resetGuessGame">Reset Game</button>
+        <p id="guessResult"></p>
+        <p id="guessAttempts"></p>
     </main>
 
     <footer id="contact">

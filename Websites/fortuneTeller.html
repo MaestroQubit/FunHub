@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
+    <script src="fortuneTeller.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune Teller</title>
@@ -17,12 +18,19 @@
                 <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Fortune Teller</h1>
+
+    <main>
+        <h2>Ask one question and reveal your fortune.</h2>
+        <input id="fortuneQuestion" type="text" placeholder="Type your question">
+        <button type="button" id="tellFortune">Reveal Fortune</button>
+        <p id="fortuneResult"></p>
+    </main>
 
     <footer id="contact">
             email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

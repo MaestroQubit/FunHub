@@ -1,3 +1,20 @@
-body{
-    text-transform: capitalize;
+main {
+    text-align: center;
+}
+
+main button {
+    margin: 8px;
+    min-width: 145px;
+}
+
+#rpsResult {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #d7ebff;
+}
+
+#rpsScore,
+#roundCount {
+    color: #c6def8;
+    font-weight: 600;
 }

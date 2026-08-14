@@ -1,3 +1,33 @@
-body{
-    text-transform: capitalize;
+#quizQuestion {
+    margin-bottom: 14px;
+}
+
+#quizOptions {
+    display: grid;
+    gap: 10px;
+    width: min(680px, 100%);
+}
+
+.quiz-option {
+    width: 100%;
+    text-align: left;
+    border-radius: 20px;
+    padding: 12px 16px;
+}
+
+.quiz-option.selected {
+    box-shadow: 0 0 0 4px rgba(164, 216, 255, 0.2);
+    filter: brightness(1.08);
+}
+
+#quizResult,
+#quizScore {
+    font-weight: 700;
+    color: #d8e9fb;
+}
+
+#nextQuizQuestion,
+#restartQuiz {
+    margin-right: 8px;
+    margin-top: 10px;
 }

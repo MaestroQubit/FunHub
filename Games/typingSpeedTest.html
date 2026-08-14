@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Speed Test</title>
-    <script src="../Games/gamesCommon.js"></script>
-    <script src="../Games/typingSpeedTest.js"></script>
+    <script src="gamesCommon.js" defer></script>
+    <script src="typingSpeedTest.js" defer></script>
     <link rel="stylesheet" href="../commonStyling.css">
-    <link rel="stylesheet" href="../Games/typingSpeedTest.css">
+    <link rel="stylesheet" href="typingSpeedTest.css">
 </head>
 
 <body>
@@ -18,15 +18,26 @@
             <ul class="navMenu">
                 <li><a href="../index.html">home</a></li>
                 <li><a href="../index.html#games">mini games</a></li>
-                <li><a href="../index.html#activities">fun activities</a></li>
+                <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Typing Speed Test</h1>
+
+    <main>
+        <h2 id="typingPrompt"></h2>
+        <textarea id="typingInput" rows="5" cols="60" placeholder="Type the exact sentence here"></textarea>
+        <div>
+            <button type="button" id="startTypingTest">Start Test</button>
+        </div>
+        <p id="typingTimer">Time: 0.0s</p>
+        <p id="typingWpm">WPM: 0</p>
+        <p id="typingResult"></p>
+    </main>
 
     <footer id="contact">
         email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

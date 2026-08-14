@@ -1,3 +1,21 @@
-body{
-    text-transform: capitalize;
+main {
+    text-align: center;
+}
+
+#moodButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+#moodButtons button {
+    min-width: 135px;
+}
+
+#moodMessage {
+    margin-top: 16px;
+    color: #e0efff;
+    font-weight: 600;
 }

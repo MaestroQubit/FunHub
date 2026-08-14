@@ -1,3 +1,19 @@
-body{
-    text-transform: capitalize;
+main {
+    text-align: center;
+}
+
+#proposalQuestion {
+    margin-bottom: 16px;
+}
+
+#proposalYes,
+#proposalNo {
+    min-width: 150px;
+    margin: 8px;
+}
+
+#proposalResult {
+    margin-top: 16px;
+    color: #e4f2ff;
+    font-weight: 700;
 }

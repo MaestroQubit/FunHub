@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper and Scissors</title>
-    <script src="gamesCommon.js"></script>
-    <script src="rockPaperScissor.js"></script>
+    <script src="gamesCommon.js" defer></script>
+    <script src="rockPaperScissor.js" defer></script>
     <link rel="stylesheet" href="../commonStyling.css">
     <link rel="stylesheet" href="rockPaperScissor.css">
 </head>
@@ -30,9 +30,10 @@
 
     <main>
         <h2>Best of 7</h2>
-        <button type="button" onclick="playRPS('rock')">Rock</button>
-        <button type="button" onclick="playRPS('paper')">Paper</button>
-        <button type="button" onclick="playRPS('scissors')">Scissor</button>
+        <button type="button" data-rps-choice="rock">Rock</button>
+        <button type="button" data-rps-choice="paper">Paper</button>
+        <button type="button" data-rps-choice="scissors">Scissors</button>
+        <button type="button" id="resetRpsGame">Reset Series</button>
         <p id="rpsResult"></p>
         <p id="rpsScore">Player Score: 0 | Computer Score: 0</p>
         <p id="roundCount">Round: 0 / 7</p>

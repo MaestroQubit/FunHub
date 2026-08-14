@@ -1,3 +1,21 @@
-body{
-    text-transform: capitalize;
+main {
+    text-align: center;
+    align-items: center;
+}
+
+#fortuneQuestion {
+    width: min(620px, 100%);
+    margin-top: 8px;
+}
+
+#tellFortune {
+    margin-top: 12px;
+    min-width: 180px;
+}
+
+#fortuneResult {
+    margin-top: 16px;
+    width: min(640px, 100%);
+    color: #e6f3ff;
+    font-weight: 650;
 }

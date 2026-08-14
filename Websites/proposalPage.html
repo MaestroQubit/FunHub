@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
+    <script src="proposalPage.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposal Page</title>
@@ -19,12 +20,21 @@
                 <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Proposal Page</h1>
+
+    <main>
+        <h2 id="proposalQuestion">Will you be my coding partner?</h2>
+        <div>
+            <button type="button" id="proposalYes">Yes</button>
+            <button type="button" id="proposalNo">No</button>
+        </div>
+        <p id="proposalResult"></p>
+    </main>
 
     <footer id="contact">
         email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

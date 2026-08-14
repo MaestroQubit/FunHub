@@ -1,3 +1,16 @@
-body{
-    text-transform: capitalize;
+main {
+    align-items: center;
+    text-align: center;
+}
+
+#complimentText {
+    width: min(700px, 100%);
+    margin: 4px auto 14px;
+    line-height: 1.45;
+    color: #e4f2ff;
+    text-shadow: 0 4px 12px rgba(10, 23, 41, 0.25);
+}
+
+#generateCompliment {
+    min-width: 220px;
 }

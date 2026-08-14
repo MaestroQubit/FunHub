@@ -1,3 +1,21 @@
-body{
-    text-transform: capitalize;
+main {
+    text-align: center;
+    position: relative;
+}
+
+#emojiInput {
+    width: min(260px, 100%);
+    margin-right: 8px;
+}
+
+#startEmojiRain,
+#stopEmojiRain {
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+#emojiRainContainer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
 }

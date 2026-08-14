@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <script src="gamesCommon.js"></script>
-    <script src="quiz.js"></script>
+    <script src="gamesCommon.js" defer></script>
+    <script src="quiz.js" defer></script>
     <link rel="stylesheet" href="../commonStyling.css">
     <link rel="stylesheet" href="quiz.css">
 </head>
@@ -29,9 +29,12 @@
     <h1>Quiz</h1>
 
     <main>
-        <h2></h2>
+        <h2 id="quizQuestion"></h2>
+        <div id="quizOptions"></div>
         <p id="quizResult"></p>
         <p id="quizScore">Score: 0</p>
+        <button type="button" id="nextQuizQuestion">Next Question</button>
+        <button type="button" id="restartQuiz">Restart Quiz</button>
     </main>
 
     <footer id="contact">

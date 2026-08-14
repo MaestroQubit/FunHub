@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../speedInsights.js"></script>
+    <script src="../speedInsights.js" defer></script>
+    <script src="moodChanger.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Changer</title>
@@ -17,12 +18,23 @@
                 <li><a href="../index.html#websites">fun websites</a></li>
                 <li><a href="../index.html#leaderboard">leaderboard</a></li>
                 <li><a href="#contact">contact details</a></li>
-                <li><a href="../profile.html">my profile</a></li>
+                <li><a href="../profile.html">profile</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Mood Changer</h1>
+
+    <main>
+        <h2 id="moodTitle">How do you feel today?</h2>
+        <div id="moodButtons">
+            <button type="button" data-mood="happy">Happy</button>
+            <button type="button" data-mood="calm">Calm</button>
+            <button type="button" data-mood="energetic">Energetic</button>
+            <button type="button" data-mood="focused">Focused</button>
+        </div>
+        <p id="moodMessage"></p>
+    </main>
 
     <footer id="contact">
             email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>

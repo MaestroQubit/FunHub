@@ -4,131 +4,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunHub - Main Page</title>
-    <script src="speedInsights.js"></script>
-    <script src="indexScript.js"></script>
+    <title>FunHub - Interactive Mini Games & Tools</title>
+    <script src="speedInsights.js" defer></script>
+    <script src="Games/gamesCommon.js" defer></script>
+    <script src="indexScript.js" defer></script>
     <link rel="stylesheet" href="commonStyling.css">
     <link rel="stylesheet" href="indexStyling.css">
 </head>
 
 <body>
     <header>
-        <nav class="header">
+        <nav class="header" aria-label="Main Navigation">
             <ul class="navMenu">
-                <li><a href="#">home</a></li>
-                <li><a href="#games">mini games</a></li>
-                <li><a href="#websites">fun websites</a></li>
-                <li><a href="#leaderboard">leaderboard</a></li>
-                <li><a href="#contact">contact details</a></li>
-                <li><a href="profile.html">profile</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#games">Mini Games</a></li>
+                <li><a href="#websites">Fun Websites</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#contact">Contact Details</a></li>
+                <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>FunHub</h1>
-    <h2>Interactive Mini Games and Fun Websites...</h2>
+    <div class="heroSection">
+        <h1>FunHub</h1>
+        <h2>Interactive Mini Games and Fun Websites...</h2>
+    </div>
 
     <main>
         <section id="playerInfoForm">
             <h3>Player Details</h3>
-            <form>
-                <input id="playerName" type="text" placeholder="Player's name"><br>
+            <form id="playerForm">
+                <label for="playerName">Player Name</label>
+                <input id="playerName" name="playerName" type="text" placeholder="Enter Player's Name" required
+                    autocomplete="off">
 
-                <input id="playerRollNo" type="number" placeholder="Player's Roll No."><br>
+                <label for="playerRollNo">Roll Number</label>
+                <input id="playerRollNo" name="playerRollNo" type="number" placeholder="Enter Roll No." required>
 
-                <input id="playerAge" type="number" placeholder="Player's Age"><br>
+                <label for="playerAge">Age</label>
+                <input id="playerAge" name="playerAge" type="number" min="1" max="120" placeholder="Enter Age" required>
 
-                <input type="submit"><br>
+                <button type="submit" id="submitBtn">Submit Details</button>
             </form>
         </section>
 
-        <h3>Mini Games</h3>
         <section id="games">
+            <h3>Mini Games</h3>
             <ul id="gamesList">
                 <li>
                     <a href="Games/guessTheNumber.html">
-                        <img src="Images/GuessTheNumberLogo.png" alt="Guess The Number" class="gameImg">
+                        <img src="Images/GuessTheNumberLogo.png" alt="Guess The Number Game Logo" class="gameImg">
+                        <span class="cardTitle">Guess The Number</span>
                     </a>
                 </li>
                 <li>
                     <a href="Games/memoryCardFlip.html">
-                        <img src="Images/MemoryCardFlipLogo.png" alt="Memory Card Flip" class="gameImg">
+                        <img src="Images/MemoryCardFlipLogo.png" alt="Memory Card Flip Game Logo" class="gameImg">
+                        <span class="cardTitle">Memory Card Flip</span>
                     </a>
                 </li>
                 <li>
                     <a href="Games/quiz.html">
-                        <img src="Images/QuizGameLogo.jpg" alt="Quiz game" class="gameImg">
+                        <img src="Images/QuizGameLogo.jpg" alt="Quiz Game Logo" class="gameImg">
+                        <span class="cardTitle">Quiz Game</span>
                     </a>
                 </li>
                 <li>
                     <a href="Games/rockPaperScissor.html">
-                        <img src="Images/RockPaperandScissorsLogo.jpg" alt="Rock, Paper and Scissors" class="gameImg">
+                        <img src="Images/RockPaperandScissorsLogo.jpg" alt="Rock Paper Scissors Game Logo"
+                            class="gameImg">
+                        <span class="cardTitle">Rock Paper Scissors</span>
                     </a>
                 </li>
                 <li>
                     <a href="Games/typingSpeedTest.html">
-                        <img src="Images/TypingSpeedTestLogo.png" alt="Typing Speed Test" class="gameImg">
+                        <img src="Images/TypingSpeedTestLogo.png" alt="Typing Speed Test Game Logo" class="gameImg">
+                        <span class="cardTitle">Typing Speed Test</span>
                     </a>
                 </li>
             </ul>
         </section>
 
-        <h3>Fun Websites</h3>
         <section id="websites">
+            <h3>Fun Websites</h3>
             <ul id="websitesList">
                 <li>
                     <a href="Websites/complimentGenerator.html">
-                        <img src="Images/ComplimentGeneratorLogo.jpg" alt="Compliment Generator" class="websiteImg">
+                        <img src="Images/ComplimentGeneratorLogo.jpg" alt="Compliment Generator Logo"
+                            class="websiteImg">
+                        <span class="cardTitle">Compliment Generator</span>
                     </a>
                 </li>
                 <li>
                     <a href="Websites/dancingText.html">
-                        <img src="Images/DancingTextLogo.png" alt="Dancing Text" class="websiteImg">
+                        <img src="Images/DancingTextLogo.png" alt="Dancing Text Logo" class="websiteImg">
+                        <span class="cardTitle">Dancing Text</span>
                     </a>
                 </li>
                 <li>
                     <a href="Websites/emojiRain.html">
-                        <img src="Images/EmojiRainLogo.jpg" alt="Emoji Rain" class="websiteImg">
+                        <img src="Images/EmojiRainLogo.jpg" alt="Emoji Rain Logo" class="websiteImg">
+                        <span class="cardTitle">Emoji Rain</span>
                     </a>
                 </li>
                 <li>
                     <a href="Websites/fortuneTeller.html">
-                        <img src="Images/FortuneTellerLogo.jpg" alt="Fortune Teller" class="websiteImg">
+                        <img src="Images/FortuneTellerLogo.jpg" alt="Fortune Teller Logo" class="websiteImg">
+                        <span class="cardTitle">Fortune Teller</span>
                     </a>
                 </li>
                 <li>
                     <a href="Websites/moodChanger.html">
-                        <img src="Images/MoodChangerLogo.jpg" alt="Mood Changer" class="websiteImg">
+                        <img src="Images/MoodChangerLogo.jpg" alt="Mood Changer Logo" class="websiteImg">
+                        <span class="cardTitle">Mood Changer</span>
                     </a>
                 </li>
                 <li>
                     <a href="Websites/proposalPage.html">
-                        <img src="Images/ProposalPageLogo.jpg" alt="Proposal Page" class="websiteImg">
+                        <img src="Images/ProposalPageLogo.jpg" alt="Proposal Page Logo" class="websiteImg">
+                        <span class="cardTitle">Proposal Page</span>
                     </a>
                 </li>
             </ul>
         </section>
 
-        <h3>Leaderboard</h3>
         <section id="leaderboard">
+            <h3>Leaderboard</h3>
             <table>
+                <caption class="srOnly">FunHub High Scores Leaderboard</caption>
                 <thead>
                     <tr class="tableColumns">
-                        <th>player name</th>
-                        <th>game</th>
-                        <th>score/result</th>
+                        <th>Player Name</th>
+                        <th>Game</th>
+                        <th>Score / Result</th>
                     </tr>
                 </thead>
-                <tbody>
-
+                <tbody id="leaderboardBody">
                 </tbody>
             </table>
         </section>
     </main>
 
     <footer id="contact">
-        email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a><br>
-        phone number: <a href="tel:7417479862">click to call us</a><br>
+        <div class="contactInfo">
+            <p>Email: <a href="mailto:2501030198@mail.jiit.ac.in">click to send mail to us</a></p>
+            <p>Phone Number: <a href="tel:+917417479862">click to call us</a></p>
+        </div>
         <p id="signingOffRemark">Team FunHub</p>
     </footer>
 
