@@ -1,7 +1,7 @@
 # FunHub
-Interactive Mini Games and Fun Activities
-This project includes: 
 
+Interactive Mini Games and Fun Activities
+This project includes:
 
 5 Mini Games
 
